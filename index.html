@@ -123,6 +123,12 @@
     .product-grid.g3 { grid-template-columns: repeat(3, 1fr); }
     .product-grid.g2 { grid-template-columns: repeat(2, 1fr); max-width: 800px; }
     .product-grid.g1 { grid-template-columns: minmax(0, 460px); justify-content: center; }
+    /* Card destacada horizontal (Baby Fútbol) */
+    .product-grid.feature { grid-template-columns: minmax(0, 940px); justify-content: center; }
+    .feature .product-card { flex-direction: row; align-items: stretch; }
+    .feature .product-img { width: 48%; aspect-ratio: auto; min-height: 360px; }
+    .feature .product-body { flex: 1; justify-content: center; padding: 40px; gap: 20px; }
+    .feature .product-name { font-size: 1.5rem; }
 
     /* ── PRODUCT CARD ── */
     .product-card {
@@ -318,7 +324,11 @@
       .hero-content { padding: 100px 6% 60px; }
       .product-grid,
       .product-grid.g1,
-      .product-grid.g2 { grid-template-columns: 1fr; }
+      .product-grid.g2,
+      .product-grid.feature { grid-template-columns: 1fr; }
+      .feature .product-card { flex-direction: column; }
+      .feature .product-img { width: 100%; aspect-ratio: 1 / 1; min-height: 0; }
+      .feature .product-body { padding: 24px; }
       .footer-top { grid-template-columns: 1fr; }
       .benefits-grid { grid-template-columns: 1fr; }
     }
@@ -509,7 +519,7 @@
     &mdash; pensado para un nivel de juego intensivo.
   </p>
 
-  <div class="product-grid g1">
+  <div class="product-grid feature">
 
     <!-- BABY FÚTBOL 4×2 -->
     <div class="product-card" data-product="baby">
