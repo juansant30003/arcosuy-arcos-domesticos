@@ -1,8 +1,0 @@
-.git
-.gitignore
-.claude
-.wrangler
-node_modules
-wrangler.toml
-serve.ps1
-.assetsignore
