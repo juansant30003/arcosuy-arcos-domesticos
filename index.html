@@ -257,6 +257,32 @@
     }
     .info-note strong { color: var(--white); }
 
+    /* Especificaciones (desplegable) */
+    .specs {
+      border: 1px solid rgba(6,157,236,.15);
+      border-radius: 10px;
+      background: rgba(6,157,236,.04);
+      overflow: hidden;
+    }
+    .specs summary {
+      cursor: pointer; list-style: none;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 11px 14px;
+      font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px;
+      color: var(--cyan); user-select: none;
+    }
+    .specs summary::-webkit-details-marker { display: none; }
+    .specs summary::after { content: '+'; font-size: 1.1rem; line-height: 1; opacity: .8; }
+    .specs[open] summary::after { content: '\2212'; }
+    .specs-list { list-style: none; padding: 0 14px 12px; margin: 0; }
+    .specs-list li {
+      display: flex; justify-content: space-between; gap: 10px;
+      padding: 6px 0; font-size: .82rem;
+      border-top: 1px solid rgba(255,255,255,.06);
+    }
+    .specs-list li span:first-child { color: var(--muted); }
+    .specs-list li span:last-child { color: var(--white); font-weight: 700; text-align: right; }
+
     /* edad badge */
     .edad-badge {
       display: inline-flex; align-items: center; gap: 6px;
@@ -437,6 +463,13 @@
             <button class="size-pill active" data-medida="1.2x0.8" data-label="1.20 × 0.80 m">1.20 × 0.80 m</button>
           </div>
         </div>
+        <details class="specs">
+          <summary>Especificaciones</summary>
+          <ul class="specs-list">
+            <li><span>Ca&ntilde;o</span><span>45 mm</span></li>
+            <li><span>Soporte de red</span><span>1/2 pulgada</span></li>
+          </ul>
+        </details>
         <div class="price-box">
           <div>
             <p class="price-label-txt">Precio unitario</p>
@@ -464,6 +497,13 @@
             <button class="size-pill active" data-medida="1.7x1.3" data-label="1.70 × 1.30 m">1.70 × 1.30 m</button>
           </div>
         </div>
+        <details class="specs">
+          <summary>Especificaciones</summary>
+          <ul class="specs-list">
+            <li><span>Ca&ntilde;o</span><span>45 mm</span></li>
+            <li><span>Soporte de red</span><span>1/2 pulgada</span></li>
+          </ul>
+        </details>
         <div class="price-box">
           <div>
             <p class="price-label-txt">Precio unitario</p>
@@ -491,6 +531,13 @@
             <button class="size-pill active" data-medida="2.1x1.7" data-label="2.10 × 1.70 m">2.10 × 1.70 m</button>
           </div>
         </div>
+        <details class="specs">
+          <summary>Especificaciones</summary>
+          <ul class="specs-list">
+            <li><span>Ca&ntilde;o</span><span>45 mm</span></li>
+            <li><span>Soporte de red</span><span>1/2 pulgada</span></li>
+          </ul>
+        </details>
         <div class="price-box">
           <div>
             <p class="price-label-txt">Precio unitario</p>
@@ -518,6 +565,13 @@
             <button class="size-pill active" data-medida="3x2" data-label="3 × 2 m">3 × 2 m</button>
           </div>
         </div>
+        <details class="specs">
+          <summary>Especificaciones</summary>
+          <ul class="specs-list">
+            <li><span>Ca&ntilde;o</span><span>60 mm</span></li>
+            <li><span>Soporte de red</span><span>1/2 pulgada</span></li>
+          </ul>
+        </details>
         <div class="price-box">
           <div>
             <p class="price-label-txt">Precio unitario</p>
@@ -545,6 +599,13 @@
             <button class="size-pill active" data-medida="4x2" data-label="4 × 2 m">4 × 2 m</button>
           </div>
         </div>
+        <details class="specs">
+          <summary>Especificaciones</summary>
+          <ul class="specs-list">
+            <li><span>Ca&ntilde;o</span><span>60 mm</span></li>
+            <li><span>Soporte de red</span><span>1/2 pulgada</span></li>
+          </ul>
+        </details>
         <div class="price-box">
           <div>
             <p class="price-label-txt">Precio unitario</p>
