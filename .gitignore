@@ -2,3 +2,8 @@
 node_modules/
 .claude/
 serve.ps1
+
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
